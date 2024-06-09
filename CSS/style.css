@@ -1,0 +1,1302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 65%;
+    margin: auto;
+}
+.clr {
+    clear: both;
+}
+.col {
+    float: left;
+}
+.HoverBlue:hover {
+    cursor: pointer;
+    color: #0779e4;
+}
+/* ********************************** */
+/* <HOME> */
+.home {
+    height: 100vh;
+    background-image: url(../Images/bg_1.jpg.webp);
+    background-position: top center;
+    background-size: cover;
+}
+.home .data {
+    width: 50%;
+    padding: 222px 0 0 0;
+    /* margin-left: 110px; */
+    color: white;
+    position: relative;
+}
+.home .data::after {
+    content: "Hi There!";
+    position: absolute;
+    top: 185px;
+    z-index: 1;
+    background-color: white;
+    color: #0779e4;
+    padding: 7px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.home .data::before {
+    content: "";
+    position: absolute;
+    top: 215px;
+    left: 33px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    z-index: 2;
+}
+.home .data h2 {
+    font-size: 60px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+.home .data p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.home .data button {
+    padding: 18px 23px;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0 5px 55px 0;
+    background-color: white;
+    color: #0779e4;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.home .data button:first-of-type {
+    background-color: #0779e4;
+    color: white;
+}
+.home .data button i {
+    padding: 0 0 0 10px;
+}
+.home .data ul {
+    list-style: none;
+    color: white;
+}
+.home .data ul li {
+    float: left;
+    font-size: 13px;
+    position: relative;
+    padding: 0 15px 0 10px;
+    font-weight: 700;
+}
+.home .data ul li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    font-size: 8px;
+    font-weight: bolder;
+}
+/* </HOME> */
+
+/* <MY-STORY> */
+.myStory {
+    padding: 128px 0;
+    background-color: #f8f8f8;
+}
+.myStory .col {
+    width: 50%;
+}
+.myStory .ItemImg {
+    padding-right: 25px;
+}
+.myStory .ItemImg .Img {
+    background-image: url(../Images/about.jpg.webp);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    position: relative;
+}
+.myStory .ItemImg .Img::after {
+    position: absolute;
+    content: "";
+    left: -30px;
+    width: 30px;
+    bottom: 30px;
+    height: 100px;
+    background-color: #57abfa;
+}
+.myStory .ItemImg .Img::before {
+    position: absolute;
+    content: "";
+    left: -30px;
+    width: 30px;
+    bottom: 130px;
+    height: 100px;
+    background-color: #89c4fb;
+}
+.myStory .ItemData {
+    padding: 50px 0 0 25px;
+}
+.myStory .ItemData button {
+    padding: 12px 18px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 5px 25px 0;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.myStory .ItemData button:first-child {
+    background-color: #0779e4;
+    position: relative;
+}
+.myStory .ItemData button:first-child::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 6px);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #0779e4 transparent transparent transparent;
+    z-index: 1;
+}
+.myStory .ItemData button:first-child a {
+    color: white;
+}
+.myStory .ItemData button a {
+    text-decoration: none;
+    color: gray;
+}
+.myStory .ItemData h2 {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+}
+.myStory .ItemData p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #999999;
+}
+.myStory .ItemData p:nth-of-type(2) {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+/* </MY-STORY> */
+
+/* <SERVICE> */
+.service {
+    padding: 128px 0;
+    background-color: #f8f8f8;
+}
+.Main-Data {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+.Main-Data p:first-child {
+    color: #0779e4;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.Main-Data p:last-child {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.service .items {
+    margin-top: 35px;
+}
+.service .items .col {
+    width: 33.333%;
+    padding: 12px;
+}
+.service .items .col .item {
+    padding: 45px 35px 35px 35px;
+    background-color: white;
+}
+.service .items .col .item h2 {
+    font-size: 20px;
+    color: #0779e4;
+    margin: 25px 0 15px 0;
+}
+.service .items .col .item p {
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    padding-right: 5px;
+    margin-bottom: 15px;
+}
+.service .items .col .item a {
+    color: #0779e4;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+}
+.service .items .col .item a i {
+    font-size: 12px;
+    font-weight: 300;
+}
+.service .items .col .item span {
+    background-color: #0779e4;
+    color: white;
+    font-size: 40px;
+    padding: 5px 15px;
+    position: relative;
+}
+.service .items .col .item span::after {
+    position: absolute;
+    content: "";
+    bottom: -9px;
+    left: calc(50% - 4.5px);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0779e4 transparent transparent transparent;
+}
+.service .items .data {
+    margin: auto;
+    text-align: left;
+    width: 70%;
+}
+.service .items .data p {
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    padding: 0 20px;
+}
+.service .items .data p:first-of-type {
+    padding: 20px 20px;
+    margin-top: 30px;
+    color: #888888;
+    font-weight: 600;
+}
+.service .items .data p:first-of-type a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #0779e4;
+}
+/* </SERVICE> */
+
+/* <COUNTER> */
+.counter {
+    padding: 100px 0;
+    background-image: linear-gradient(to bottom, #0779e4dd, #0779e4dd),
+        url("../Images/bg_3.jpg.webp");
+    background-position: center center;
+    background-size: cover;
+}
+.counter .items .col {
+    width: 33.333%;
+}
+.counter .items .col i,
+.counter .items .col .data {
+    float: left;
+
+    color: white;
+}
+.counter .items .col i {
+    font-size: 60px;
+    margin-right: 20px;
+}
+.counter .items .col .data h4 {
+    font-size: 38px;
+    font-weight: 700;
+}
+.counter .items .col .data p {
+    font-weight: 500;
+}
+/* </COUNTER> */
+
+/* <PORTFOLIO> */
+.portfolio {
+    padding: 128px 0;
+    background-color: #f8f8f8;
+}
+.portfolio .items {
+    margin-top: 35px;
+}
+.portfolio .items .col {
+    width: 50%;
+}
+.portfolio {
+    padding: 128px 0;
+    color: #f8f8f8;
+}
+.portfolio .items .col {
+    padding: 10px;
+    width: 50%;
+}
+.portfolio .items .col .item .Img img {
+    object-fit: cover;
+    height: 350px;
+}
+.portfolio .items .col .item .Img {
+    position: relative;
+}
+.portfolio .items .col .item .Img .Data {
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    background-color: #0779e4;
+    text-align: center;
+    padding-top: 150px;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.portfolio .items .col .item:hover .Img .Data {
+    opacity: 0.9;
+}
+/* </PORTFOLIO> */
+
+/* <TESTIMONIAL> */
+.testimonial {
+    background-color: #f8f8f8;
+    padding: 128px 0;
+}
+.testimonial .Main-Data {
+    margin-bottom: 100px;
+}
+.testimonial .items .col {
+    width: 33.333%;
+    padding: 10px;
+}
+.testimonial .items .item {
+    padding: 35px 25px;
+    background-color: white;
+}
+.testimonial .items .item .header .Img {
+    background-image: url("../Images/person_1.jpg.webp");
+    width: 85px;
+    height: 85px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+}
+.testimonial .items .item .header .Img::after {
+    content: "❝";
+    position: absolute;
+    bottom: -5px;
+    right: -10px;
+    width: 28px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 0px 0px 10px 8px;
+    font-size: 40px;
+    background-color: #0779e4;
+    color: white;
+}
+.testimonial .items .item .header .Title {
+    float: left;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.testimonial .items .item .header .Title h2:first-child {
+    padding: 15px 0 10px 15px;
+}
+.testimonial .items .item .header .Title h2:last-child {
+    padding: 0 0 0 15px;
+    font-size: 13px;
+    color: #0779e4;
+}
+.testimonial .items .item .header p {
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    padding: 20px 20px 15px 0;
+}
+.testimonial .items .col:nth-child(2) .item,
+.testimonial .items .col:nth-child(2) .item .header h2,
+.testimonial .items .col:nth-child(2) .item .header p {
+    background-color: #0779e4;
+    color: white;
+}
+.testimonial .items .col:nth-child(2) .item .header .Img::after {
+    background-color: white;
+    color: #0779e4;
+}
+.testimonial .items .btn {
+    margin: auto;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+.testimonial .items .btn button {
+    width: 30px;
+    height: 1.5px;
+    border: none;
+    margin: 0 5px 0 0;
+    background-color: #0779e4;
+    cursor: pointer;
+}
+.testimonial .items .btn button:last-child {
+    background-color: #999999c7;
+}
+/* </TESTIMONIAL> */
+
+/* <BLOG> */
+.blog {
+    padding: 128px 0;
+    background-color: #f8f8f8;
+}
+.blog .col {
+    width: 50%;
+    /* background-color: #0275d8; */
+    padding: 10px;
+}
+.blog .col .item {
+    background-color: white;
+    border-radius: 5px;
+}
+.blog .col .itemData {
+    padding: 35px 25px;
+}
+.blog .col .item img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+    height: 350px;
+}
+.blog .col .item h4 {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #3b3b3b;
+}
+.blog .col .item h4 a {
+    color: black;
+}
+.blog .col .item .data div:first-child {
+    margin-right: 20px;
+}
+.blog .col .item .data div:first-child i,
+.blog .col .item .data div:first-child p,
+.blog .col .item .data div:nth-child(2) i,
+.blog .col .item .data div:nth-child(2) p {
+    color: #888888cc;
+    float: left;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.blog .col .item .data div:first-child a,
+.blog .col .item .data div:nth-child(2) a {
+    color: #0779e4;
+}
+
+.blog .col .item .data div:first-child,
+.blog .col .item .data div:nth-child(2) {
+    float: left;
+}
+.blog .col .item .data div:first-child i,
+.blog .col .item .data div:nth-child(2) i,
+.blog .col .item .data div:nth-child(2) p {
+    margin-right: 10px;
+    color: #0779e4;
+}
+
+.blog .col .itemData h4:first-of-type {
+    margin: 20px 0 15px 0;
+    color: black;
+    font-size: 20px;
+}
+.blog .col .itemData h4:first-of-type a {
+    transition: all 0.3s;
+}
+.blog .col .itemData h4:first-of-type a:hover {
+    color: #0779e4;
+}
+.blog .col .itemData p:last-child {
+    color: #888888cc;
+    line-height: 1.8;
+}
+/* </BLOG> */
+
+/* <MY PRICING> */
+.pricing {
+    padding: 128px 0 256px 0;
+    background-color: #f8f8f8;
+}
+.pricing .items {
+    padding: 50px 0 0 0;
+}
+.pricing .items .col {
+    text-align: center;
+    width: 33.333%;
+    padding: 10px;
+}
+.pricing .items .col .item {
+    background-color: white;
+    padding: 45px;
+}
+.pricing .items .col .item {
+    color: #0779e4;
+}
+.pricing .items .col .item h4 {
+    margin-bottom: 15px;
+}
+.pricing .items .col .item h2 {
+    font-size: 50px;
+}
+.pricing .items .col .item h2 sup {
+    font-size: 24px;
+    font-weight: 400;
+    top: -25px;
+    position: relative;
+    vertical-align: baseline;
+}
+.pricing .items .col .item p {
+    color: #888888cc;
+    line-height: 1.8;
+    margin: 40px 0;
+}
+.pricing .items .col .item button {
+    padding: 15px 50px;
+    font-weight: 600;
+    border: 1px solid #0779e4;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #0779e4;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.pricing .items .col .item button:hover {
+    background-color: #0779e4;
+    color: white;
+}
+/* <MY PRICING> */
+
+/* <CONTACT-US> */
+.contact {
+    background-color: white;
+}
+.contact .map,
+.contact .data {
+    float: left;
+    width: 50%;
+}
+.contact .data {
+    padding: 48px;
+}
+.contact .data h2 {
+    color: #000000;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 2px 0 0 0;
+}
+.contact .data h2 + p {
+    color: #999999;
+    margin: 20px 0 30px 0;
+}
+.contact .data ul:first-of-type li {
+    float: left;
+    width: 33.3333%;
+}
+.contact .data ul:first-of-type li:not(:first-child) {
+    padding-left: 10px;
+}
+.contact .data ul:first-of-type li h5 {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 13px;
+}
+.contact .data ul:first-of-type li p {
+    line-height: 1.8;
+    color: #999999;
+    font-weight: 300;
+}
+.contact .data ul:first-of-type li:nth-child(2) a,
+.contact .data ul:first-of-type li:nth-child(3) p {
+    color: black;
+    cursor: pointer;
+}
+.contact .data form {
+    margin-top: 20px;
+}
+.contact .data input,
+.contact .data textarea {
+    height: 45px;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 6px 12px;
+    margin: 5px 0;
+    width: 100%;
+}
+.contact .data input::placeholder,
+.contact .data textarea::placeholder {
+    color: #999999cc;
+    font-weight: 300;
+}
+.contact .data input:focus,
+.contact .data textarea:focus {
+    outline-color: #0779e4;
+}
+.contact .data input[name="Name"] {
+    float: left;
+    width: 48.5%;
+}
+.contact .data input[name="Email"] {
+    float: right;
+    width: 48.5%;
+}
+.contact .data textarea {
+    height: 100px;
+}
+.contact .data button {
+    background-color: #0779e4;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.contact .data h2:last-of-type {
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 60px 0 20px 0;
+}
+.contact .data ul:last-of-type li {
+    float: left;
+}
+.contact .data ul:last-of-type li:not(:first-child) {
+    padding-left: 15px;
+}
+.contact .data ul:last-of-type li a {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #0779e4;
+    font-weight: 700;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.contact .data ul:last-of-type li:hover a {
+    color: #000000;
+}
+/* </CONTACT-US> */
+
+/* <HAVE ANY WORKS> */
+.haveAnyWork {
+    padding: 50px 0;
+    background-color: #0779e4;
+    color: white;
+}
+.haveAnyWork .data,
+.haveAnyWork .btn {
+    float: left;
+    width: 50%;
+}
+.haveAnyWork h2 {
+    font-weight: 400;
+    font-size: 27px;
+}
+.haveAnyWork h2 + p {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+.haveAnyWork .btn {
+    float: right;
+    text-align: right;
+}
+.haveAnyWork button {
+    background-color: #0779e4;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 17px 115px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.haveAnyWork button:hover {
+    color: #000000;
+    background-color: white;
+}
+/* </HAVE ANY WORKS> */
+
+/* <footer> */
+.footer {
+    padding: 80px 0;
+    background-color: #eeeeee;
+}
+.footer .col {
+    width: 27%;
+    float: left;
+    padding: 10px;
+}
+.footer .col:first-of-type {
+    width: 45%;
+    float: left;
+}
+.footer .item h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+.footer .col:first-child h3 {
+    font-weight: 900;
+    font-size: 22px;
+    margin: 0 0 30px 0;
+}
+.footer .col:nth-last-child(2) h3 {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+.footer .item p {
+    width: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 2;
+}
+.footer .col:nth-last-child(2) .item ul li span,
+.footer .col:nth-last-child(2) .item ul li p {
+    font-size: 14px;
+    float: left;
+}
+.footer .item ul {
+    list-style: none;
+    color: #797979;
+    position: relative;
+    z-index: 1;
+}
+.footer .item li {
+    padding: 10px;
+    font-size: 14px;
+}
+.footer .item li span {
+    color: #0779e4;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer .col:nth-last-child(2) .item ul li,
+.footer .col:nth-last-child(2) .item ul li p,
+.footer .col:nth-last-child(2) .item ul li a {
+    color: #000000;
+}
+.footer .col:nth-last-child(2) .item ul li:first-child span {
+    padding-top: 5px;
+}
+.footer .icons {
+    margin-top: 20px;
+}
+.footer .icons span {
+    margin: 0 2px;
+    padding: 10px 13px;
+    background-color: #0779e4;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.footer .icons span i {
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    transition: all 0.5s;
+}
+.footer .icons span:nth-child(2) {
+    padding: 10px 15px;
+}
+.footer .icons span:hover i {
+    color: white;
+}
+.footer .icons span:nth-child(1):hover {
+    background-color: rgb(7, 193, 255);
+}
+.footer .icons span:nth-child(2):hover {
+    background-color: rgb(36, 36, 126);
+    padding: 10px 15px;
+}
+.footer .icons span:nth-child(3):hover {
+    background-color: rgb(126, 36, 36);
+}
+/* </footer> */
+
+/* <Copyright> */
+.copyright {
+    background-color: #e9e9e9;
+    padding: 50px 0;
+    text-align: center;
+    color: #999999;
+    font-size: 16px;
+}
+.copyright a {
+    color: #0779e4;
+}
+/* </Copyright> */
+
+/* ****************************************************************************** */
+/* ****************************************************************************** */
+/* ****************************************************************************** */
+/* ****************************************************************************** */
+
+/*Media-Screen*/
+/**************/
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    .home .data {
+        width: 60%;
+    }
+
+    .home .data h2 {
+        font-size: 60px;
+    }
+    /* </HOME> */
+
+    /* <MYSTORY> */
+    .myStory .container {
+        width: 97.5%;
+    }
+
+    .myStory .ItemImg {
+        padding-right: 10px;
+    }
+    .myStory .ItemData {
+        padding-left: 10px;
+    }
+    .myStory .ItemImg .Img::after,
+    .myStory .ItemImg .Img::before {
+        width: 15px;
+        left: -15px;
+    }
+    /* </MYSTORY> */
+    .service .container {
+        width: 99%;
+    }
+    .service .items .col .item {
+        padding-bottom: 50px;
+        border-radius: 5px;
+    }
+    /* </MYSTORY> */
+
+    /* <TESTIMONIAL> */
+    .testimonial .container {
+        width: 99%;
+    }
+    /* </TESTIMONIAL> */
+
+    /* <BLOG> */
+    .blog .container {
+        width: 99%;
+    }
+    /* </BLOG> */
+
+    /* <PRICING> */
+    .pricing .container {
+        width: 95%;
+    }
+    .pricing .items .col .item {
+        padding: 45px 55px;
+    }
+    /* </PRICING> */
+
+    /* <CONTACT> */
+    .contact .container {
+        width: 95%;
+    }
+    .contact .map {
+        width: 50%;
+    }
+    .contact .map iframe {
+        width: 100%;
+    }
+    /* </CONTACT> */
+
+    /* <HAVE ANY WORK> */
+    .haveAnyWork .data {
+        float: left;
+        width: 60%;
+    }
+    .haveAnyWork .btn {
+        width: 40%;
+    }
+    .haveAnyWork .btn button {
+        padding: 17px 100px;
+    }
+    /* </HAVE ANY WORK> */
+
+    /* <FOOTER> */
+    .footer .container {
+        width: 100%;
+    }
+    .footer .item p {
+        width: 80%;
+    }
+    /* </FOOTER> */
+
+    /* <COPYWRITE? */
+    .copyright {
+        font-size: 14px;
+    }
+    /* </COPYWRITE? */
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    /* <MYSTORY> */
+    .myStory .ItemData h2 {
+        font-size: 28px;
+    }
+    /* </MYSTORY> */
+
+    /* <SERVICES> */
+    .service .items {
+        margin-top: 70px;
+    }
+    .Main-Data p:last-child {
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+    .service .items .data p {
+        padding: 0 40px 0 20px;
+    }
+    /* </SERVICES> */
+
+    /* <COUNTER> */
+    .counter .container {
+        width: 70%;
+    }
+    .counter .items .col {
+        width: 50%;
+        padding-bottom: 20px;
+    }
+    .counter .items .col .data p {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    /* </COUNTER> */
+
+    /* <TESTIMONIAL> */
+    .testimonial .items .col {
+        width: 50%;
+    }
+    .testimonial .items .col:nth-child(3) {
+        display: none;
+    }
+
+    /* <TESTIMONIAL> */
+
+    /* <PRICING> */
+    .pricing .container {
+        width: 95%;
+    }
+    .pricing .items .col {
+        width: 33.333%;
+    }
+    .pricing .items .col .item {
+        padding: 45px 55px;
+    }
+    /* </PRICING> */
+
+    /* <CONTACT> */
+    .contact .container {
+        width: 95%;
+    }
+    .contact .map {
+        width: 0%;
+    }
+    .contact .map iframe {
+        width: 100%;
+    }
+    .contact .data {
+        width: 100%;
+    }
+    .contact .data ul:first-of-type li p {
+        padding-right: 10px;
+    }
+    /* </CONTACT> */
+
+    /* <FOOTER> */
+    .footer .container {
+        width: 100%;
+    }
+    .footer .col {
+        width: 50%;
+    }
+    .footer .item p {
+        width: 80%;
+    }
+    /* </FOOTER> */
+
+    /* <COPYWRITE? */
+    .copyright {
+        font-size: 14px;
+    }
+    /* </COPYWRITE? */
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 70%;
+    }
+    /* <HOME> */
+    .home .data {
+        padding-top: 220px;
+        width: 100%;
+    }
+    .home .data h2 {
+        font-size: 38px;
+    }
+    /* </HOME> */
+
+    /* <MY STORY> */
+    .myStory .col {
+        width: 100%;
+    }
+    /* </MY STORY> */
+
+    /* <SERVICE> */
+    .service .items .col {
+        width: 100%;
+    }
+    .service .items .data {
+        width: 100%;
+    }
+    /* </SERVICE> */
+
+    /* <COUNTER> */
+    .counter .container {
+        width: 80%;
+    }
+    /* </COUNTER> */
+
+    /* <PORTFOLIO> */
+    .portfolio .items .col {
+        width: 100%;
+    }
+    .portfolio .items .col .item .Img .Data {
+        font-size: 13px;
+    }
+    /* </PORTFOLIO> */
+
+    /* <BLOG> */
+    .blog .items .col {
+        width: 100%;
+    }
+    /* </BLOG> */
+
+    /* <PRICING> */
+    .pricing .items .col .item {
+        padding: 45px 55px;
+    }
+    .pricing .container {
+        width: 80%;
+    }
+    .pricing .items {
+        width: 85%;
+        margin: auto;
+    }
+    .pricing .items .col {
+        width: 100%;
+        padding: 10px;
+    }
+    .pricing .items .col .item {
+        padding: 25px;
+    }
+    .pricing .items .col .item h4 {
+        font-size: 14px;
+    }
+    .pricing .items .col .item button {
+        width: 65%;
+    }
+    /* </PRICING> */
+
+    /* <HAVE ANY WORK> */
+    .haveAnyWork .data,
+    .haveAnyWork .btn {
+        width: 100%;
+    }
+    .haveAnyWork .btn {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .haveAnyWork .btn button {
+        width: 100%;
+    }
+    /* </HAVE ANY WORK> */
+
+    /* <FOOTER> */
+    .footer .container {
+        width: 100%;
+    }
+    .footer .col:first-of-type {
+        width: 100%;
+    }
+    .footer .col {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .footer .item p {
+        width: 95%;
+    }
+    /* </FOOTER> */
+
+    /* <COPYWRITE? */
+    .copyright {
+        font-size: 14px;
+    }
+    /* </COPYWRITE? */
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 85%;
+    }
+    /* <HOME> */
+    .home .data {
+        padding-top: 220px;
+        width: 100%;
+    }
+    /* </HOME> */
+
+    /* <SERVICE> */
+    .service .items .col {
+        width: 100%;
+    }
+    .service .items .data {
+        width: 100%;
+    }
+    .service .items .data p:first-of-type,
+    .service .items .data p:last-of-type {
+        padding-left: 10px;
+    }
+    /* </SERVICE> */
+
+    /* <COUNTER> */
+    .counter .container {
+        width: 80%;
+    }
+    .counter .items .col {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .counter .items .col .item {
+        display: inline-block;
+    }
+    /* </COUNTER> */
+
+    /* <TESTIMONIAL> */
+    .testimonial .items .col {
+        width: 100%;
+    }
+    .testimonial .items .col:nth-child(2) {
+        display: none;
+    }
+    /* </TESTIMONIAL> */
+    /* <PRICING> */
+    .pricing .container {
+        width: 100%;
+    }
+    .pricing .items {
+        width: 90%;
+        margin: auto;
+    }
+    .pricing .items .col {
+        width: 100%;
+        padding: 10px;
+    }
+    .pricing .items .col .item h4 {
+        font-size: 14px;
+    }
+    .pricing .items .col .item button {
+        width: 70%;
+    }
+    /* </PRICING> */
+
+    /* <CONTACT> */
+    .contact .map {
+        width: 0%;
+        height: 0%;
+    }
+    .contact .data ul:first-of-type li {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .contact .data ul:first-of-type :not(li:first-child) {
+        padding-left: 0;
+        width: 100%;
+    }
+    .contact .data input[name="Name"],
+    .contact .data input[name="Email"] {
+        width: 100%;
+    }
+    /* </CONTACT> */
+
+    /* <HAVE ANY WORK> */
+    .haveAnyWork .data,
+    .haveAnyWork .btn {
+        width: 100%;
+    }
+    .haveAnyWork .btn {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .haveAnyWork .btn button {
+        width: 100%;
+    }
+    /* </HAVE ANY WORK> */
+
+    /* <FOOTER> */
+    .footer .container {
+        width: 100%;
+    }
+    .footer .col:first-of-type {
+        width: 100%;
+    }
+    .footer .col {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .footer .item p {
+        width: 95%;
+    }
+    /* </FOOTER> */
+
+    /* <COPYWRITE? */
+    .copyright {
+        font-size: 14px;
+    }
+    /* </COPYWRITE? */
+}
